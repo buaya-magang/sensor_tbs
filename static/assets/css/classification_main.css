@@ -1,0 +1,85 @@
+.dropzone {
+  position: relative; /* Menjadikan kontainer bisa ditempatkan dengan benar */
+  background: #ffffff;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  max-width: 80%;
+  margin: 40px auto 0 auto; /* Tambahkan margin-top 20px untuk menurunkan area */
+  height: auto;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 2px #1e85d4; /* Menggunakan shadow untuk border */
+  border-radius: 10px;
+}
+
+
+.dropzone img {
+  max-width: 100%;
+  max-height: 400px;
+  height: flex;
+  object-fit: contain;
+  }
+
+.hidden {
+  display: none;
+  }
+
+.dragging {
+  border: 2px dashed #ccc;
+  }
+
+@media (max-width: 768px) {
+.dropzone {
+  max-width: 85%;
+  }
+
+.dropzone img {
+  max-height: 300px;
+  }
+  }
+
+.content.text-center {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0;
+  }
+
+  .hero {
+  margin-top: 0px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  }
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  }
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  }
+.content.text-center {
+  width: 100%;
+  max-width: 1200px;
+  padding-bottom: 0px;}
+
+.result-container {
+  position: absolute;
+  top: 110px;
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -1,0 +1,19 @@
+/* Menyesuaikan ukuran gambar */
+.result-container img {
+  width: 80%;
+  max-width: 400px;
+  height: auto;
+  margin-top: 50px;
+}
+
+/* Menyesuaikan ukuran teks di dalam alert */
+.result-container .alert-info {
+  width: 80%;
+  font-size: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+  /* margin-top: 120px;  */
+}
+.main {
+  margin-top: 120px;
+}

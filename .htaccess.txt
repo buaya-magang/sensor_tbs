@@ -1,0 +1,3 @@
+PassengerEnabled on
+PassengerAppRoot /home/lxsiubgv/public_html
+PassengerPython /home/lxsiubgv/public_html/sensor_tbs/bin/python
