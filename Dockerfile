@@ -1,17 +1,9 @@
-# Gunakan image Python resmi
-FROM python:3.10-slim
+FROM python:3.10
 
-# Set direktori kerja di dalam container
 WORKDIR /app
 
-# Salin semua file ke direktori kerja container
-COPY . .
+COPY . /app
 
-# Install dependencies dari requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Expose port default Hugging Face Space
-EXPOSE 7860
-
-# Jalankan aplikasi Flask
-CMD ["python", "app.py"]
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "7860"]
