@@ -63,5 +63,5 @@ def load_model_and_predict(image_path):
     predicted_label = class_labels[predicted_class[0][0]]
     return predicted_label
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=7860)
